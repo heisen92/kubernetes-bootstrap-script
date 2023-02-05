@@ -81,5 +81,5 @@ systemctl restart keyboard-setup.service >/dev/null 2>&1
 echo "[TASK 13] SETTING TIMEZONE TO MEXICO CITY" 
 timedatectl set-timezone America/Mexico_City >/dev/null 2>&1
 
-echo "[TASK 14] FIXING RUNTIME-ENDPOINT"
+echo "[TASK 14] FIXING RUNTIME-ENDPOINT FOR CRICTL"
 crictl config runtime-endpoint unix:///var/run/containerd/containerd.sock
